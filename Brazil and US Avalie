@@ -1,0 +1,23 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window = PabloLib:Create(
+"Projeto LKA I Zombie Attack (Update)", -- Name here.
+"Enabled", -- If you want draggable set here to "Enabled" if you dont want set to "Disabled".
+"p" -- You can put any keybind here to open close.
+)
+
+local tab1 = window:CreateTab("1k views update")
+
+tab1:CreateButton("BR Version", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/zombie-attack-brazil/main/new%20free"))();
+end)
+
+tab1:CreateButton("U.S Version", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/zombie-attack-script-free/main/update"))();
+end)
+
+tab1:CreateButton("Close / Fechar", function()
+print(value)
+PabloLib:Close()
+end)
